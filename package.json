@@ -1,0 +1,21 @@
+{
+  "name": "console-error-checker",
+  "version": "1.0.0",
+  "description": "Batch URL checker for console errors",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx src/batchCheck.ts",
+    "check": "tsx src/batchCheck.ts",
+    "check:pattern": "cross-env TARGET_ERROR=\"ReferenceError:\" tsx src/batchCheck.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "cross-env": "^7.0.3",
+    "playwright": "^1.40.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
